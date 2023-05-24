@@ -11,3 +11,6 @@ Pertinence des résultats : Elasticsearch classe les résultats de recherche en 
 Visualisations : Elasticsearch est souvent associé à Kibana, une plateforme de visualisation de données permettant de créer des tableaux de bord interactifs et des visualisations basées sur les données indexées.
 
 En utilisant ces fonctionnalités, onpeut analyser les données indexées, effectuer des recherches précises et obtenir des informations agrégées sur vos données.
+
+
+Je rajoute ici un petit screen de mes requetes sur Elasticsearch 
