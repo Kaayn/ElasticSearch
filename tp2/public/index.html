@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ElasticSearch Films</title>
+  <style>
+    /* Ajoutez votre style CSS ici */
+  </style>
+</head>
+<body>
+  <h1>ElasticSearch Films</h1>
+
+  <form id="searchForm">
+    <input type="text" id="searchInput" placeholder="Rechercher un film">
+    <button type="submit">Rechercher</button>
+  </form>
+
+  <div id="filmsList">
+    <!-- Les résultats de recherche seront affichés ici -->
+  </div>
+
+  <script>
+    const searchForm = document.getElementById('searchForm');
+    const searchInput = document.getElementById('searchInput');
+    const filmsList = document.getElementById('filmsList');
+
+    searchForm.addEventListener('submit', function(event) {
+      event.preventDefault();
+      console.log("filmsList");
+      const searchQuery = searchInput.value.trim();
+      searchFilms(searchQuery);
+    });
+
+    function searchFilms(query) {
+      fetch('/search', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ search: query })
+      })
+      .then(response => response.json())
+      .then(data => {
+        // Efface la liste des films précédents
+        filmsList.innerHTML = '';
+
+        // Affiche les résultats de recherche
+        data.forEach(film => {
+          const filmElement = document.createElement('div');
+          filmElement.innerHTML = `<h3>${film._source.film_name}</h3>
+                                   <p>Auteur: ${film._source.author_name}</p>
+                                   <p>Date: ${film._source.date}</p>`;
+          filmsList.appendChild(filmElement);
+        });
+      })
+      .catch(error => console.error(error));
+    }
+  </script>
+</body>
+</html>
