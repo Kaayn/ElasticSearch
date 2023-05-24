@@ -13,4 +13,5 @@ Visualisations : Elasticsearch est souvent associé à Kibana, une plateforme de
 En utilisant ces fonctionnalités, onpeut analyser les données indexées, effectuer des recherches précises et obtenir des informations agrégées sur vos données.
 
 
-Je rajoute ici un petit screen de mes requetes sur Elasticsearch 
+Je rajoute ici un petit screen de mes requetes sur Elasticsearch ![image](https://github.com/Kaayn/ElasticSearch/assets/47184542/abfeb501-76fe-4ae9-a573-bc2148717a9e)
+
