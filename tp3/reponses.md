@@ -24,3 +24,7 @@ Kibana est utilisé pour visualiser, explorer et analyser les données stockées
 
 Un dashboard dans Kibana est une interface visuelle personnalisée qui permet de regrouper différentes visualisations pour fournir une vue synthétique des données et faciliter l'analyse, le suivi et la présentation des informations clés.
 
+![image](https://github.com/Kaayn/ElasticSearch/assets/47184542/363a906c-84e2-42ab-a937-ade214e5afba)
+![image](https://github.com/Kaayn/ElasticSearch/assets/47184542/2b6af0b7-7050-44b4-9a6d-b572764675d4)
+![image](https://github.com/Kaayn/ElasticSearch/assets/47184542/75c2a799-a981-4ba7-b9e8-2c92724b2fa1)
+
