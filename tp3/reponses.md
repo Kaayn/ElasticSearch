@@ -1,5 +1,9 @@
 # TP3 
 
+
+***Schéma global représentant le fonctionnement des concecpts lié a ELasticsearch**
+![image](https://github.com/Kaayn/ElasticSearch/assets/47184542/0a737a7c-0b7e-40e0-a6e4-6aaa24ebe147)
+
 Elasticsearch assure la robustesse, la sauvegarde et l'intégrité des données grâce à plusieurs mécanismes.
 
 Les donnée sont répartie sur plusieurs nœuds, assurant la redondance et la disponibilité en cas de panne d'un nœud.
